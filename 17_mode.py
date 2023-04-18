@@ -11,3 +11,17 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    dictionary = {}
+    common = ""
+    max = 0
+
+    for num in nums:
+        dictionary[num] = dictionary.get(num, 0) + 1
+
+    for key in dictionary:
+        if dictionary[key] > max:
+            max = dictionary[key]
+            common = key
+
+    return common
+
