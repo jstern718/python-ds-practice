@@ -12,3 +12,13 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+    if lst:
+        return lst[-1]
+
+
+
+
+
+nums = [1, 2, 3]
+print(last_element(nums))
+print(nums == [1, 2, 3])

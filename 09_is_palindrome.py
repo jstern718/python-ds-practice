@@ -21,3 +21,13 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    lower_cased = phrase.replace(" ", "").lower()
+
+    result = lower_cased[::-1]
+
+    return result == lower_cased
+
+print (is_palindrome('tacocat'))
+print (is_palindrome('noon'))
+print (is_palindrome('robert'))
+print (is_palindrome('robert'))
